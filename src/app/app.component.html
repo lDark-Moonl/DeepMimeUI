@@ -7,7 +7,7 @@
 <div class="row">
   <div class="column">
     <mat-card class="videouploader">
-      <video #player width="320" height="240" controls>
+      <video #player width="480" height="320" controls>
       Your browser does not support the video tag.
       </video>
       <form> <input type="file" (change)="onchange($event)"  /> </form>
@@ -15,7 +15,9 @@
 
   <div class="column">
     <mat-card class="videouploader">
-
+      <h3>
+        Top 5 scores:
+      </h3>
     <div class="wrapper">
       <div class="box box1" *ngFor="let item of items">{{item}}
 
