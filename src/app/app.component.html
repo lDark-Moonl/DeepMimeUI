@@ -14,9 +14,15 @@
     </mat-card> </div>
 
   <div class="column">
-    <mat-card class="scoregrid">
-      <ejs-grid #overviewgrid id='overviewgrid' rowHeight='38' [allowSorting]='true' height='600' (dataBound)='onDataBound($event)' [enableHover]='false'  [allowSorting]='true' >
-      </ejs-grid>
+    <mat-card class="videouploader">
+
+    <div class="wrapper">
+      <div class="box box1" *ngFor="let item of items">{{item}}
+
+      </div>
+
+
+    </div>
     </mat-card>
   </div>
 </div>

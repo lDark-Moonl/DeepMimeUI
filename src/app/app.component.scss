@@ -1,13 +1,43 @@
 .videouploader {
-  width: fit-content;
+  width: content-box;
+  height: 300px;
+  padding: 50px;
+  margin-left: 1px;
+  margin-right: 1px;
+
 }
 .column {
   float: left;
   width: fit-content;
   padding: -5px;
+
 }
 .row {
   margin-left:25%;
   margin-right: 25%;
   float: left ;
+}
+
+body {
+  margin: 40px;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 100%;
+}
+
+.box:nth-child(even) {
+  background-color: #ccc;
+  color: #000;
+}
+
+.wrapper {
+  display: grid;
+  border:0px solid #000;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(10px,1fr) minmax(200px,2fr));
 }
